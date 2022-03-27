@@ -57,7 +57,7 @@ Questão 2)
 	Em seguida usamos o git add . para adicionar a modificação feita commitar novamente informando sobre a resolução de 
 	conflito e por ultimo utilizar o git push.
 
-Quest 4)
+Questão 4)
 
 	O node.js buscou ampliar o campo de alcance da linguagem JavaScript com o uso do motor V8 e 
 	a biblioteca libuv(posso estar enganado quanto ao nome da bilbioteca) ele ganhou características
@@ -69,7 +69,7 @@ Quest 4)
 	saida sem bloqueio de thread dando o mesmo resultado que as multi-thread se tratando de requisições concorrentes.
 
 	
-Quest 5)
+Questão 5)
 
 	O servidor HTTP é um software de um servidor web responsavel por processar as 
 	requisições e repondelas.
