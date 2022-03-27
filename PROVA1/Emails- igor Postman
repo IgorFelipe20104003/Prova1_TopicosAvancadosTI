@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "588a5c72-3329-477d-a435-00bb1972acaf",
+		"name": "emails_validos-igor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "teste de email unico",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"format\": true,\r\n    \"domain\": \"example.com\",\r\n    \"disposable\": false,\r\n    \"dns\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.disify.com/api/email/your@example.com,another@mail.com/mass",
+					"protocol": "https",
+					"host": [
+						"www",
+						"disify",
+						"com"
+					],
+					"path": [
+						"api",
+						"email",
+						"your@example.com,another@mail.com",
+						"mass"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "teste de email em massa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"format\": true,\r\n    \"domain\": \"example.com\",\r\n    \"disposable\": false,\r\n    \"dns\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.disify.com/api/email/igorfelipe.otaku@gmail.com, testegmail.com/mass",
+					"protocol": "https",
+					"host": [
+						"www",
+						"disify",
+						"com"
+					],
+					"path": [
+						"api",
+						"email",
+						"igorfelipe.otaku@gmail.com, testegmail.com",
+						"mass"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retorna_Emails_Validos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"format\": true,\r\n    \"domain\": \"example.com\",\r\n    \"disposable\": false,\r\n    \"dns\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.disify.com/api/view/6d2b2431cf123db70184beb2567ea10b",
+					"protocol": "https",
+					"host": [
+						"www",
+						"disify",
+						"com"
+					],
+					"path": [
+						"api",
+						"view",
+						"6d2b2431cf123db70184beb2567ea10b"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

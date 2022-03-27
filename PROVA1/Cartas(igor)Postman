@@ -1,0 +1,432 @@
+{
+	"info": {
+		"_postman_id": "207249ab-50bc-48bb-9a7f-f2e8ec7b56cc",
+		"name": "Cartas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Embaralhar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[  {\r\n    \"alt_names\": \"\",\r\n    \"experimental\": 0,\r\n   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1",
+					"protocol": "https",
+					"host": [
+						"deckofcardsapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"deck",
+						"new",
+						"shuffle",
+						""
+					],
+					"query": [
+						{
+							"key": "deck_count",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tirar carta",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[  {\r\n    \"alt_names\": \"\",\r\n    \"experimental\": 0,\r\n   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://deckofcardsapi.com/api/deck/hgycxj35t6ih/draw/?count=2",
+					"protocol": "https",
+					"host": [
+						"deckofcardsapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"deck",
+						"hgycxj35t6ih",
+						"draw",
+						""
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reembaralhar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[  {\r\n    \"alt_names\": \"Teste\",\r\n    \"experimental\": 1,\r\n   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://deckofcardsapi.com/api/deck/s46kcsgwlew8/shuffle/?remaining=true",
+					"protocol": "https",
+					"host": [
+						"deckofcardsapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"deck",
+						"s46kcsgwlew8",
+						"shuffle",
+						""
+					],
+					"query": [
+						{
+							"key": "remaining",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Novo deck",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[  {\r\n    \"alt_names\": \"teste\",\r\n    \"experimental\": 1,\r\n   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://deckofcardsapi.com/api/deck/new/",
+					"protocol": "https",
+					"host": [
+						"deckofcardsapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"deck",
+						"new",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deck Parcial",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[  {\r\n    \"alt_names\": \"\",\r\n    \"experimental\": 0,\r\n   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://deckofcardsapi.com/api/deck/new/shuffle/?cards=AS,2S,KS,AD,2D,KD,AC,2C,KC,AH,2H,KH",
+					"protocol": "https",
+					"host": [
+						"deckofcardsapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"deck",
+						"new",
+						"shuffle",
+						""
+					],
+					"query": [
+						{
+							"key": "cards",
+							"value": "AS,2S,KS,AD,2D,KD,AC,2C,KC,AH,2H,KH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionando pilha",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[  {\r\n    \"alt_names\": \"Teste\",\r\n    \"experimental\": 1,\r\n   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://deckofcardsapi.com/api/deck/hgycxj35t6ih/pile/shuffle/add/?cards=2S,5C",
+					"protocol": "https",
+					"host": [
+						"deckofcardsapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"deck",
+						"hgycxj35t6ih",
+						"pile",
+						"shuffle",
+						"add",
+						""
+					],
+					"query": [
+						{
+							"key": "cards",
+							"value": "2S,5C"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Embaralhar deck",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"sucesso\": true, \r\n    \"deck_id\": \"3p40paa87x90\", \r\n    \"restante\": 12, \r\n    \"pilhas\": { \r\n        \"descartar\": { \r\n            \"restante\": 2 \r\n        } \r\n    } \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://deckofcardsapi.com/api/deck/hgycxj35t6ih/pile/shuffle/shuffle/",
+					"protocol": "https",
+					"host": [
+						"deckofcardsapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"deck",
+						"hgycxj35t6ih",
+						"pile",
+						"shuffle",
+						"shuffle",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listando cartoes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[  {\r\n    \"alt_names\": \"\",\r\n    \"experimental\": 0,\r\n   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://deckofcardsapi.com/api/deck/hgycxj35t6ih/pile/shuffle/list/",
+					"protocol": "https",
+					"host": [
+						"deckofcardsapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"deck",
+						"hgycxj35t6ih",
+						"pile",
+						"shuffle",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Desenho de pilhas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[  {\r\n    \"alt_names\": \"Teste\",\r\n    \"experimental\": 1,\r\n   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://deckofcardsapi.com/api/deck/hgycxj35t6ih/pile/shuffle/draw/?cards=5C",
+					"protocol": "https",
+					"host": [
+						"deckofcardsapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"deck",
+						"hgycxj35t6ih",
+						"pile",
+						"shuffle",
+						"draw",
+						""
+					],
+					"query": [
+						{
+							"key": "cards",
+							"value": "5C"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Devolvendo ao baralho",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[  {\r\n    \"alt_names\": \"\",\r\n    \"experimental\": 0,\r\n   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://deckofcardsapi.com/api/deck/hgycxj35t6ih/return/",
+					"protocol": "https",
+					"host": [
+						"deckofcardsapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"deck",
+						"hgycxj35t6ih",
+						"return",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

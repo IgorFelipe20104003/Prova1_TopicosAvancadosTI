@@ -1,0 +1,95 @@
+Questão 1)
+
+	Passo1--> Deve ser realizado o comando "git clone" para apontar o repositorio remoto que deseja clonar e 
+	assim realizar uma copia repositorio no local de trabalho onde seram realizados as mudanças
+	necessárias para correção;
+
+	Passo2--> Utilizar o comando "git checkout -b feature branch" para assim criar uma branch separada
+	da branch principal do codigo fonte e ao mesmo tempo copiar as informações contidas na mesma;
+	
+	Passo 3--> Realizar as mudanças necessárias no código-fonte que foi transferido para a branch
+	criada(feature branch) e realizar o comando git add para adicionar ao controle de software as mudanças
+	realizadas;
+	
+	Passo 4--> Usar o comando " git commit -am "nome dado ao commit" " assim guardando o estado atual das mudanças
+	feitas adicionadas ao software de versão informando quem é o autor e a menssagem que ira junto do commit.
+	(obs: a menssagem deve ser especifica para relacionar com as mudanças commitadas); 
+
+	Passo 5--> Para finalizar é feito um " git push " para subir as informações do repositorio local para o 
+	repositorio remoto .
+
+Questão 2)
+
+	O controle de versão serve para registrar as alterações realizadas
+	em um arquivo, podendo se necessario voltar a um dos estados anteriores
+	(versoes anteriores), podendo tambem ser feita uma versao inicial de um determinado
+	projeto enquanto é dado seguimento a uma versão mais atualizada, todo o trabalho 
+	pode ser feito por diferentes desenvolvedores considerando essa como uma vantagem
+	tambem(apesar de não ser rotineiro um desenvolvedor pode sobrescrever o outro rsrsrs).
+
+	A Gestão do Fluxo de código de um time deve ser realizada da seguinte forma:
+	Em um repositorio central esta armazenada a versão mais recente do projeto em questão,
+	cada colaborador envolvido pode ter acesso aos dados mais recentes do projeto e fazem as 
+	mudanças a eles designadas, em seguida ao concluir sua etapa ele sobe os dados atualizados
+	para que outros desenvolvedores deem continuidade no projeto tendo informações adicionais
+	para poderem continuar o desenvolvimento ate a conclusão.
+
+ Questão 3)
+
+	Quando realizamos uma alteração num trecho do projeto e outra pessoa realiza a mesma mudança quando 
+	usarmos o git pull para receber a versão mais recente do codigo antes de fazer o git push, essa 
+	divergencia sera acusada como um conflito que esta ocorrendo e em qual arquivo.
+	Para realizar a solução desse problema de ser aberto o arquivo que foi acusado o conflito
+	localizando a marcação a seguir.
+	<<<<<<<< HEAD (MODIFICAÇÃO FEITA POR VOCE).
+
+	    SUA MODIFICAÇÃO
+	
+	================ (DIVISÃO ENTRE OS CODIGOS DE CONFLITO).
+
+	    MODIFICAÇÃO DE OUTRO COLABORADOR
+
+	>>>>>>>>> BRANCH-A(CODIGO QUE LOCALIZA A BRANCH QUE DESEJA MESCLAR).
+
+	Assim que for localizado podemos escolher umas das alterações para manter e apagamos a outra junto das marcações
+	realizadas pelo git (<<<<<<< ========= >>>>>>>>) ou a depender do caso se for uma mudança no trecho que complemente a
+	outra devemos apagar as marcações do git e manter as duas juntas.
+	Em seguida usamos o git add . para adicionar a modificação feita commitar novamente informando sobre a resolução de 
+	conflito e por ultimo utilizar o git push.
+
+Quest 4)
+
+	O node.js buscou ampliar o campo de alcance da linguagem JavaScript com o uso do motor V8 e 
+	a biblioteca libuv(posso estar enganado quanto ao nome da bilbioteca) ele ganhou características
+	de back-end podendo rodar no lado do servidor e criar aplicações sem necessidade de um browser.
+	
+	O principal problema tecnologico que ele resolveu era relacionado ao tratamento das requisições
+	que nele sao single-thread e enquanto nas outras linguagens é multi-thread, ou seja, demanda menos 
+	uso de recursos computacionais e por ter operações assincronas eles executão as operações de entrada e 
+	saida sem bloqueio de thread dando o mesmo resultado que as multi-thread se tratando de requisições concorrentes.
+
+	
+Quest 5)
+
+	O servidor HTTP é um software de um servidor web responsavel por processar as 
+	requisições e repondelas.
+	O cliente(agente-usuario) que faz uma solicitação(requisição) e é redirecionado através de um servidor
+	DNS por algumas camadas até que, na última ele é direcionado para a rota do servidor
+	especifico que ele precisa e envia um resultado chamado de resposta ao cliente.
+
+-------------------------------------------------------------------------------------------------								
+	Status e Codigos:
+	1. Respostas de informação       –  são iniciadas pelo número 1; Status  EX: 103;
+	2. Respostas de sucesso          –  são iniciadas pelo número 2; Status  EX: 203;
+	3. Respostas de redirecionamento – são iniciadas pelo número 3;  Status  EX:304;
+	4. Respostas de erro de cliente  –  são iniciadas pelo número 4; Status  EX :400;
+	5. Respostas de erro de servidor – são iniciadas pelo número 5;  Status  EX :502;
+-------------------------------------------------------------------------------------------------
+	Verbos:
+	1 GET – retorna lista de usuários;
+	2 POST – insere um novo usuário;
+	3 DELETE - remove usuário com id;
+	4 PUT – substitui os dados do usuário com id;
+	5 PATCH – altera itens dos dados do usuário com id;
+	
+	
